@@ -43,4 +43,4 @@ result = pd.DataFrame(
  'close': close,
  'volume': volume})
 
-result.to_csv('result.csv')
+result.to_csv('data/result.csv')
