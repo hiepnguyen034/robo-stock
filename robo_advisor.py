@@ -50,7 +50,7 @@ print('The result has been saved successfully')
 print('#########################################')
 
 print('\n')
-print('Most recent stock data time: '+ result.iloc[0]['close'])
+print('Most recent stock data time: '+ result.iloc[0]['time'])
 print('DETAILS:')
 print('Run at : ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 print('Stock: '+symbol)
