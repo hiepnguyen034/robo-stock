@@ -46,13 +46,14 @@ result = pd.DataFrame(
 result.to_csv('data/'+ symbol+'.csv')
 
 print('The result has bene saved successfully')
+print('\n')
 print('DETAILS:')
 print('Run at : ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 print('Stock: '+symbol)
 print('The latest closing price: '+  "${0:,.2f}".format(float(result.iloc[0]['close'])))
 print('The recent average high price: '+ "${0:,.2f}".format(max(result['high'].astype(float))))
 print('The recent average low price: '+ "${0:,.2f}".format(min(result['high'].astype(float))))
-if float(result.iloc[0]['close'])> result['close'].astype(float).mean():
-	print ('We should buy this stock because its current price is higher than the average price over the last 100 days')
+if float(result.iloc[0]['close'])> result['close'][0:15].astype(float).mean():
+	print ('We should buy this stock because its current price is higher than the closing average price over the last 15 days')
 else:
-	print ('We should NOT buy this stock because its current price is higher than the average price over the last 100 days')
+	print ('We should NOT buy this stock because its current price is higher than the closing average price over the last 15 days')
