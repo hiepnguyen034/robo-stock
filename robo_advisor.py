@@ -44,8 +44,9 @@ result = pd.DataFrame(
  'volume': volume})
 
 result.to_csv('data/'+ symbol+'.csv')
-
-print('The result has bene saved successfully')
+print('`n')
+print('#########################################')
+print('The result has been saved successfully')
 print('\n')
 print('DETAILS:')
 print('Run at : ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
@@ -57,3 +58,5 @@ if float(result.iloc[0]['close'])> result['close'][0:15].astype(float).mean():
 	print ('We should buy this stock because its current closing price is higher than the closing average price over the last 15 days')
 else:
 	print ('We should NOT buy this stock because its current closing price is lower than the closing average price over the last 15 days')
+
+print('#########################################')
