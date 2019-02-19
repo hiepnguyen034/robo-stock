@@ -15,9 +15,8 @@ pip install -r requirements.txt
 
 ```
 touch .env
-
 ```
-Open .env and inser ALPHAVANTAGE_API_KEY='YOUR API KEY GOES HERE'
+Open .env file and insert ```ALPHAVANTAGE_API_KEY='YOUR API KEY GOES HERE'``` 
 
 3. Run the file
 
