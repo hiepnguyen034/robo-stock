@@ -43,7 +43,7 @@ result = pd.DataFrame(
  'close': close,
  'volume': volume})
 
-result.to_csv('data/result.csv')
+result.to_csv('data/'+ symbol+'.csv')
 
 print('The result has bene saved successfully')
 print('DETAILS:')
