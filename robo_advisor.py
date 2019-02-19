@@ -4,7 +4,8 @@ import os
 import requests
 import pandas as pd 
 from pathlib import Path
-home = str(Path.home())
+from datetime import datetime
+
 
 load_dotenv()
 
@@ -44,3 +45,7 @@ result = pd.DataFrame(
  'volume': volume})
 
 result.to_csv('data/result.csv')
+
+print('The result has bene saved successfully')
+print('DETAILS:')
+print('Stock: '+symbol)
