@@ -11,10 +11,18 @@ cd robo-stock
 pip install -r requirements.txt
 ```
 
-2. Run the file
+2. Request an API key from https://www.alphavantage.co/
+
+```
+touch .env
+
+```
+Open .env and inser ALPHAVANTAGE_API_KEY='YOUR API KEY GOES HERE'
+
+3. Run the file
 
 ```
 python robo_advisor.py
 ```
 
-3. Insert name of stock price and data will be saved to data folder
+4. Insert name of stock price and data will be saved to data folder
