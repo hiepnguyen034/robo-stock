@@ -52,3 +52,7 @@ print('Stock: '+symbol)
 print('The latest closing price: '+  "${0:,.2f}".format(float(result.iloc[0]['close'])))
 print('The recent average high price: '+ "${0:,.2f}".format(max(result['high'].astype(float))))
 print('The recent average low price: '+ "${0:,.2f}".format(min(result['high'].astype(float))))
+if float(result.iloc[0]['close'])> result['close'].astype(float).mean():
+	print ('We should buy this stock because its current price is higher than the average price over the last 100 days')
+else:
+	print ('We should NOT buy this stock because its current price is higher than the average price over the last 100 days')
