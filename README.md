@@ -16,3 +16,5 @@ pip install -r requirements.txt
 ```
 python robo_advisor.py
 ```
+
+3. Insert name of stock price and data will be saved to data folder
