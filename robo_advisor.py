@@ -3,7 +3,6 @@ import json
 import os
 import requests
 import pandas as pd 
-from pathlib import Path
 from datetime import datetime
 
 
@@ -48,4 +47,5 @@ result.to_csv('data/result.csv')
 
 print('The result has bene saved successfully')
 print('DETAILS:')
+print('Run at : ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 print('Stock: '+symbol)
